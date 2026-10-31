@@ -1,0 +1,27 @@
+{
+  "$schema": "https://agent-plugins.org/schemas/1.0.0/plugin.schema.json",
+  "name": "gt36",
+  "version": "0.15.36-codex.1",
+  "description": "gt36 engineering skills adapted for Codex, with compatible tool mappings and configurable model roles. Focused on simple code, root-cause analysis, and verified results.",
+  "license": "MIT",
+  "keywords": [
+    "gt36",
+    "codex",
+    "agent-skills",
+    "gt36-mode",
+    "principles",
+    "agent-style",
+    "subagents",
+    "unslop"
+  ],
+  "extensions": {
+    "com.openai": {
+      "onboardingSkill": "./skills/setup-gt36/SKILL.md",
+      "interface": {
+        "displayName": "gt36 for Codex",
+        "shortDescription": "Engineering skills with Codex-compatible tools and model configuration.",
+        "logo": "./assets/logo.png"
+      }
+    }
+  }
+}

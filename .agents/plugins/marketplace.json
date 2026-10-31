@@ -1,0 +1,15 @@
+{
+  "name": "gt36-local",
+  "interface": {
+    "displayName": "gt36 local"
+  },
+  "plugins": [
+    {
+      "name": "gt36",
+      "source": {
+        "source": "local",
+        "path": "./"
+      }
+    }
+  ]
+}

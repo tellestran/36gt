@@ -1,0 +1,17 @@
+### Bug fix
+
+**Applier handoff.** Before editing or delegating, show the actual analogous feature/function files and symbols and the choices they justify. Resolve API contracts or obtain the human's acceptance of a concrete missing-contract proposal before dependent code. Keep optimization imports tied to the feature. Pass these constraints and any explicit test-edit authorization to every worker or arena runner. Existing checks still run; verification requirements do not authorize test, snapshot, fixture, or test-configuration edits. This policy also covers preparatory steps in this playbook.
+
+**You own this task. Plan, review, verify.** Delegate investigation and the fix to subagents, stay in the lead. Pick each subagent's reasoning level and fast or standard speed for the job, per the Subagents section.
+
+Be scientific. Every shipped line traces to runtime evidence. Belt-and-suspenders that "might help" is a hypothesis, not a fix. It does not ship. When evidence refutes a hypothesis, revert what it motivated. The smallest change the evidence justifies ships, nothing more.
+
+1. Reproduce it yourself on the matching surface via the control skill (Non-negotiables), even when a debug or instrumentation protocol says to ask the user to reproduce. Ask the user only with a stated, specific reason the control surface cannot reach the target, and only after driving it as far as it goes. If it won't reproduce directly, synthesize the trigger, tighten conditions, or instrument until it fires.
+2. Binary-search the cause. Form the candidate hypotheses, then rule them out until one survives. Seed them with `explainer` over the affected subsystem and the **investigator** skill for regression history. Each pass, take the split that cuts the most remaining problem space, get runtime evidence, eliminate. When program state is unclear, add instrumentation or logging and read it as the code runs. Don't guess. Drive a long or stubborn hunt with an available, authorized continuation mechanism. Confirm the surviving *mechanism* with runtime evidence before the step-3 architect/interrogate fan-out.
+3. Plan the fix. If it needs an architectural decision across a function boundary, run `architect` and stop for explicit human approval of its document before continuing. Delegate the **applier** skill to a subagent using your configured bug-fix model (default `grok-4.7-xhigh-fast`) with a specific scope, the repro evidence, and the design and human approval context when applicable. A simple fix with a settled shape can go directly to applier.
+4. Verify on the same surface. The original repro now passes. "Inconclusive" or wrong-surface is not a pass. Flag it. Unit tests show branch behavior, not bug absence.
+5. Preserve failing-before and passing-after repro evidence. Use **tdd** and stage a failing regression test before the fix only when the human explicitly requested the test changes or approved a plan naming them, and a practical local test path exists. A cheap test target alone does not authorize test edits. Otherwise run existing checks and the original repro without adding or updating tests, snapshots, fixtures, or test configuration. If a test edit is needed, report why and ask first; never weaken checks to get green.
+   Apply **sequence-verifiable-units** to the allowed units. Without test-edit authorization, do not invent a failing-test commit.
+6. Run **Opening a PR**.
+
+**Reply:** what was broken, root cause, fix, how you verified. Paste failing-then-passing repro output verbatim.
