@@ -1,3 +1,9 @@
 node_modules/
 .DS_Store
 *.log
+
+# Local Graphify runtime and generated artifacts
+.venv-graphify/
+graphify-out/
+.graphify_labels.json
+.graphify_labels.json.sig

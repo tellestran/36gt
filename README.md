@@ -139,6 +139,9 @@ The [Codex adapter](./docs/harness/codex.md) maps shared tool names, model roles
 
 The [guide](./docs/guide/README.md) retains inherited examples, including playbooks and overnight runs. On Codex, follow the adapter instead of those platform-specific procedures.
 
+
+For optional knowledge-graph navigation in this checkout, see [Graphify setup and usage](./docs/harness/graphify.md).
+
 ## make it yours
 
 Use [`automate-me`](./skills/automate-me/SKILL.md) to draft a personal mode skill from accessible, in-scope working history. Use [`setup-gt36`](./skills/setup-gt36/SKILL.md) to update `.gt36/codex.json`. Keep existing choices unless you explicitly want to change them; unavailable model overrides fall back to inheritance as described in the adapter.

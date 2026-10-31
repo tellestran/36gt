@@ -96,3 +96,14 @@ Do not run `worktree-audit.sh` cleanup procedures, invoke the live GitHub watche
 - Do not stage, commit, push, publish, or modify remotes unless requested. Use `codex/` for a new branch when one is needed, unless the user specifies another name.
 - Keep dependencies, caches, temporary output, and secrets out of source control. Follow `.gitignore`; do not commit `node_modules/`.
 - Report the concrete change, relevant checks, and any remaining path or runtime limitations. Do not claim unrun checks passed.
+
+## Optional Graphify context
+
+The project-local Graphify skill lives at `.agents/skills/graphify/SKILL.md`.
+Read [GRAPIFY.md](./GRAPIFY.md) for setup, usage, graph scope, and update commands
+before using Graphify in this repository. Use `.venv-graphify/bin/graphify` when
+`graphify` is not on PATH. Repository guidance and the Codex
+adapter take precedence over the upstream skill's platform assumptions.
+The initial `graphify-out/` graph covers code helpers only, not Markdown skills
+or role prompts. Check source files for missing context. Refresh the graph when
+its source changes; do not rebuild it or install hooks merely to answer a question.

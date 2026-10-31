@@ -1,0 +1,9 @@
+# Keep runtime, generated artifacts, and vendored Graphify instructions out of the graph.
+.venv-graphify/
+graphify-out/
+.agents/skills/graphify/
+.git/
+node_modules/
+**/node_modules/
+**/bun.lock
+**/package-lock.json
