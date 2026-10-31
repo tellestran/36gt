@@ -49,8 +49,8 @@ Present one table with ticket key, commit hash and subject, and the actual behav
 
 Prefer AskQuestion with exactly these two choices, translated to the user's language when appropriate:
 
-- **Cung cấp context ticket** (Provide ticket context).
-- **Bỏ qua, tiếp tục từ code và Git** (Skip and continue from code and Git).
+- **Provide ticket context**.
+- **Skip and continue from code and Git**.
 
 Example:
 

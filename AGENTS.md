@@ -58,6 +58,7 @@ Honor explicit skill invocation policies. A simple change does not require chain
 - Use native Codex tools with their actual schemas. Model settings and role prompts are not permission to spawn workers, bypass runtime limits, or create separate sidebar chats.
 - Do not add background runs, automations, mandatory playbook stages, or automatic delivery steps. Do not restore removed automation files.
 - Verify the result with checks proportionate to the change. Report a missing runtime, dependency, unresolved path, or unavailable live check directly; do not replace evidence with an agent's self-report.
+- Write all repository documentation in English, including guides, skill instructions, examples, and documentation updates. Keep conversational replies in the user's language.
 - Respond in the user's language. Keep progress updates and the final report concise, with the changed files, relevant checks, and remaining limitations when they matter.
 
 ## Editing skills and configuration
